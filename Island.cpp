@@ -17,6 +17,8 @@ class Nation{
 		vector<double> yVals;
 };
 
+//Override << to allow for easy printing of a nation object.
+//Was used for testing, not really used right now!
 ostream& operator << (ostream& os, const Nation& n){
 	os << n.name << ": ";
 	vector<double>::const_iterator i1;
